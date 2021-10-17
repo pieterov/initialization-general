@@ -3,7 +3,7 @@
 #
 # NAME:         Pieter Overdevest
 # DATE:         April 20, 2021.
-# VERSION:      14
+# VERSION:      14.
 #
 # DESCRIPTION:  Initialize general settings and parameters.
 #
@@ -33,7 +33,7 @@
 
                 # Data wrangling. Note, plyr needs to be activated before dplyr!
                 # Forecats is tidyverse library, especially made to handle factors in R. It provides a suite of
-                # useful tools that solve common problems with factors. 
+                # useful tools that solve common problems with factors.
                 "plyr", "dplyr", "magrittr", "tidyr", "forcats", "tibble",
 
                 # Fast write and read.
@@ -79,7 +79,7 @@
                 # Working with images
                 # https://cran.r-project.org/web/packages/imager/vignettes/gettingstarted.html
                 "imager",
-                
+
                 # Read .dbf .spss .octave files.
                 # https://cran.r-project.org/web/packages/foreign/foreign.pdf
                 "foreign",
@@ -106,7 +106,7 @@
 
                 # Flex dashboards
                 "flexdashboard",
-                
+
                 # Create shiny dashboard in three parts.
                 "shinydashboard",
 
@@ -139,14 +139,14 @@
                 # Dropbox integration from R
                 # https://github.com/karthik/rdrop2
                 "rdrop2",
-                
+
                 # Interact with Google Sheets and Google Drive.
                 # https://googlesheets4.tidyverse.org/articles/articles/auth.html
                 "googlesheets4",
-                
+
                 # https://googledrive.tidyverse.org
                 "googledrive",
-                
+
                 # Plotting.
                 "grid", "gridExtra", "ggrepel", #"ggplot2",
                 "RColorBrewer", "scales", "plotly",
@@ -254,42 +254,42 @@
         path.leafets      <- paste0(path.project, "Leaflets/")
         path.shiny        <- paste0(path.project, "Shiny/")
         path.images       <- paste0(path.project, "Images/")
-        
+
         # Set options(stringsAsFactors = FALSE), to allow row binding of esb rows.
         options(stringsAsFactors = FALSE)
-        
+
         # Turn off scientific numbers.
         options(scipen = 999)
-        
+
         # Set seed.
         set.seed(12345)
-        
+
         # Color vector, light and dark colors (6 color pairs).
         v.color.pair      <- rep(brewer.pal(n = 12, name = "Paired"), 6)
-        
+
         # Color vector, darker colors (8 color levels).
         v.color.dark      <- rep(brewer.pal(n = 8, name = "Dark2"), 10)
-        
+
         # Color vector, lighter colors (12 color levels).
         v.color.light     <- rep(brewer.pal(n = 12, name = "Set3"), 6)
-        
+
         # This allows defining font.axis.text.size before calling this initialization script.
         if (!exists("font.axis.title.size")) {font.axis.title.size <- 20} # Axis title.
         if (!exists("font.axis.text.size"))  {font.axis.text.size  <- 20} # Axis text.
         if (!exists("font.facet.text.size")) {font.facet.text.size <- 14} # Size of text in facet headers.
         if (!exists("font.label.text.size")) {font.label.text.size <- 3}  # Size of text labels next to dots.
-        
+
         # Define font and line color.
         font.color <- "grey30"
         line.color <- "grey70"
-        
+
         # Set system locale.
         # https://stackoverflow.com/questions/41743949/utf-8-encoding-not-used-although-it-is-set-in-source/41747709#41747709
         # Sys.setlocale("LC_ALL") #,"English"
-        
+
         # Style title, requires library(shiny), activated here in 'I - Overall'.
         tag.map.title <- tags$style(HTML(
-                
+
                 ".leaflet-control.map-title {
                                 transform: translate(-50%,20%);
                                 position: fixed !important;
