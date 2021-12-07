@@ -271,19 +271,21 @@
         # https://stackoverflow.com/questions/41743949/utf-8-encoding-not-used-although-it-is-set-in-source/41747709#41747709
         # Sys.setlocale("LC_ALL") #,"English"
         
+        
         # Style title, requires library(shiny), activated here in 'I - Overall'.
         tag.map.title <- tags$style(HTML(
                 
                 ".leaflet-control.map-title {
                                 transform: translate(-50%,20%);
+                                width: 750px;
                                 position: fixed !important;
                                 left: 50%;
                                 text-align: center;
                                 padding-left: 10px;
                                 padding-right: 10px;
-                                background: rgba(255,255,255,0.75);
+                                background: rgba(255,255,255,0.5);
                                 font-weight: bold;
-                                font-size: 28px;}"))
+                                font-size: 24px;}"))
 
 
 #########################################################################
