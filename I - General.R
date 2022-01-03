@@ -221,7 +221,10 @@
                 #"inlabru"
 
                 # Graphs
-                "igraph", "networkD3"
+                "igraph", "networkD3",
+                
+                # Edit RProfie of Snippets.
+                "usethis"
                 ))
 
 
