@@ -145,7 +145,7 @@
                 # https://www.youtube.com/watch?v=J72LP2_yv1U
                 # https://github.com/bnosac/cronR
                 # daarnaast benodigd: "shiny", "miniUI", "shinyFiles"
-                "cronR",
+                # "cronR",
 
                 # Clock speed of code.
                 "tictoc",
