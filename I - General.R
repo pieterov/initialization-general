@@ -141,12 +141,6 @@
                 # Build dashboards.
                 "shiny", "miniUI", "shinyFiles",
 
-                # Scheduling.
-                # https://www.youtube.com/watch?v=J72LP2_yv1U
-                # https://github.com/bnosac/cronR
-                # daarnaast benodigd: "shiny", "miniUI", "shinyFiles"
-                # "cronR",
-
                 # Clock speed of code.
                 "tictoc",
 
@@ -225,7 +219,32 @@
                 
                 # Edit RProfie of Snippets.
                 "usethis"
-                ))
+                )
+        )
+
+        # Platform specific packages.
+        if(c.computer == "mac") {
+                
+                f_install_packages_from_cran(v.package = c(
+                        
+                        # Scheduling.
+                        # https://www.youtube.com/watch?v=J72LP2_yv1U
+                        # https://github.com/bnosac/cronR
+                        # daarnaast benodigd: "shiny", "miniUI", "shinyFiles"
+                        "cronR"
+                        )
+                )
+                        
+        } else if(c.computer == "mac") {
+                
+                f_install_packages_from_cran(v.package = c(
+                        
+                        # Scheduling.
+                        # https://github.com/bnosac/taskscheduleR
+                        "taskscheduleR"
+                        )
+                )
+        }
 
 
 ######################################################################################
