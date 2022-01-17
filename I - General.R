@@ -235,7 +235,7 @@
                         )
                 )
                         
-        } else if(c.computer == "mac") {
+        } else if(c.computer == "windows") {
                 
                 f_install_packages_from_cran(v.package = c(
                         
