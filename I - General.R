@@ -50,6 +50,9 @@
                 # Read websites.
                 "RCurl",
 
+                # Tools for working with URL's and HTTP, used to send messages to Slack.
+                "httr",
+                
                 # Read PDF documents.
                 "pdftools",
 
