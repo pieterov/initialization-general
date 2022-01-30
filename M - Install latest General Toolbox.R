@@ -9,7 +9,11 @@
 detach("package:generaltoolbox", unload = TRUE)
 
 # Update the toolbox by downloading the latest version from GitHub.
-devtools::install_github("pieterov/generaltoolbox", INSTALL_opts=c("--no-multiarch"))
+devtools::install_github(
+        
+        rrepo        = "pieterov/generaltoolbox",
+        INSTALL_opts = c("--no-multiarch")
+)
 
 # Attach the (updated) package again to memory.
 library(generaltoolbox)
