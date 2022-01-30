@@ -28,6 +28,9 @@
                 # https://cran.r-project.org/web/packages/broom/vignettes/broom.html
                 "broom",
 
+                # Read and write data (like 'csv', 'tsv' and 'fwf') quickly.
+                "vroom",
+                
                 # Text manipulation.
                 "tidytext",
 
