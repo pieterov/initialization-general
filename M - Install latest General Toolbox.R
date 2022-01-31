@@ -11,7 +11,7 @@
         # Update the toolbox by downloading the latest version from GitHub.
         devtools::install_github(
                 
-                rrepo        = "pieterov/generaltoolbox",
+                repo         = "pieterov/generaltoolbox",
                 INSTALL_opts = c("--no-multiarch")
         )
         
