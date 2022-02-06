@@ -231,7 +231,7 @@
         # Platform specific packages.
         if(c.computer == "mac") {
                 
-                f_install_packages_from_cran(v.package = c(
+                f_install_package_from_cran(v.package = c(
                         
                         # Scheduling.
                         # https://www.youtube.com/watch?v=J72LP2_yv1U
@@ -243,7 +243,7 @@
                         
         } else if(c.computer == "windows") {
                 
-                f_install_packages_from_cran(v.package = c(
+                f_install_package_from_cran(v.package = c(
                         
                         # Scheduling.
                         # https://github.com/bnosac/taskscheduleR
