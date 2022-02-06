@@ -7,7 +7,7 @@
 # LOAD LIBRARIES.
 ######################################################################################
 
-        f_install_packages_from_cran(v.package = c(
+        f_install_package_from_cran(v.package = c(
 
                 # Bijv. rbindlist (to rbind a list of data frames).
                 "data.table",
