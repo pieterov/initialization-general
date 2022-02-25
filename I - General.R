@@ -21,18 +21,9 @@
                 # https://github.com/fstpackage/fst/issues/71 - Cannot write list columns.
                 "fst",
                 
-                # Write en read parquet files.
-                "arrow",
-
                 # Convert data to tidy data
                 # https://cran.r-project.org/web/packages/broom/vignettes/broom.html
                 "broom",
-
-                # Read and write data (like 'csv', 'tsv' and 'fwf') quickly.
-                "vroom",
-                
-                # Text manipulation.
-                "tidytext",
 
                 # Functional programming.
                 "purrr",
@@ -43,69 +34,14 @@
                 # Files to open and save XLS and CSV (readr) files.
                 "openxlsx", "readxl", "readr",
 
-                # Reading spatial files into R
-                # http://zevross.com/blog/2016/01/13/tips-for-reading-spatial-files-into-r-with-rgdal/
-                "rgdal",
-
                 # Nice tables
                 "flextable",
-
-                # Read websites.
-                "RCurl",
-
-                # Tools for working with URL's and HTTP, used to send messages to Slack.
-                "httr",
-                
-                # Read PDF documents.
-                "pdftools",
-
-                # Read and write PNG and JPEG files.
-                "jpeg", "png",
-
-                # Manipulate JPEGs.
-                # https://cran.r-project.org/web/packages/magick/vignettes/intro.html
-                "magick",
-
-                # Working with images
-                # https://cran.r-project.org/web/packages/imager/vignettes/gettingstarted.html
-                "imager",
-                
-                # Read .dbf .spss .octave files.
-                # https://cran.r-project.org/web/packages/foreign/foreign.pdf
-                "foreign",
-
-                # To do OCR with pdftools.
-                "tesseract",
-
-                # Read WORD documents, work with Office documents.
-                "qdapTools", "officer",
-
-                # Open-source JavaScript library for mobile-friendly interactive maps.
-                # https://rstudio.github.io/leaflet/
-                # https://stackoverflow.com/questions/30110377/saving-leaflet-output-as-html/44086571
-                "leaflet", "htmlwidgets",
-
-                # Toon muiscoordinaten in Leaflet.
-                # https://community.rstudio.com/t/problem-with-data-projection-on-leaflet/8801
-                # https://cran.r-project.org/web/packages/leafem/leafem.pdf
-                "leafem",
-
-                # Construct, coerce to, test for, and print polynomial objects.
-                # https://cran.r-project.org/web/packages/polynom/polynom.pdf
-                "polynom",
 
                 # Flex dashboards
                 "flexdashboard",
                 
                 # Create shiny dashboard in three parts.
                 "shinydashboard",
-
-                #' Fast nearest neighbour search (C++). Finds the k nearest neighbours for every point
-                #' in a given dataset in O(N log N) time using Arya and Mount's ANN library (v1.1.3).
-                #' There is support for approximate as well as exact searches, fixed radius searches
-                #' and 'bd' as well as 'kd' trees. The distance is computed using the L2 (Euclidean) metric.
-                # https://stackoverflow.com/questions/30343898/nearest-neighbor-in-r
-                "RANN",
 
                 # Knit PDF with Notebook.
                 # And on new machines run, tinytex::install_tinytex(), see also:
@@ -119,23 +55,6 @@
                 # remotes::install_github('yihui/tinytex')
                 # tinytex:::install_prebuilt()
                 "tinytex",
-
-                # Read sqlite files
-                "RSQLite",
-
-                # Read JSON files.
-                "jsonlite", "geojsonR",
-
-                # Dropbox integration from R
-                # https://github.com/karthik/rdrop2
-                "rdrop2",
-                
-                # Interact with Google Sheets and Google Drive.
-                # https://googlesheets4.tidyverse.org/articles/articles/auth.html
-                "googlesheets4",
-                
-                # https://googledrive.tidyverse.org
-                "googledrive",
                 
                 # Plotting.
                 "grid", "gridExtra", "ggrepel", #"ggplot2",
@@ -166,63 +85,6 @@
                 # Create beautiful tables in RMarkdown.
                 "knitr", "kableExtra",
 
-                # Microbenchmarking.
-                "microbenchmark",
-
-                # Parallel computing
-                "parallel",
-
-                # Connect with CBS data (toc = table of contents).
-                # df.toc <- cbs_get_toc()
-                # df.data <- cbs_get_data("83765NED")
-                # https://www.cbs.nl/nl-nl/onze-diensten/open-data/statline-als-open-data/snelstartgids
-                "cbsodataR",
-
-                # Shape files.
-                # There was an error after installing Big Surr.
-                # https://stackoverflow.com/questions/64844185/sf-and-rgdal-are-not-working-on-mac-os-big-sur-how-to-fix-closed
-                #
-                # https://github.com/r-spatial/sf
-                "sf",
-
-                # Spatial points.
-                # https://www.jessesadler.com/post/gis-with-r-intro/
-                # https://cengel.github.io/rspatial/2_spDataTypes.nb.html
-                "sp",
-
-                # rgeos implements functionality for the manipulation and querying of spatial geometries
-                # using the Geometry Engine — Open Source (GEOS)C library.
-                # https://medium.com/ibm-data-science-experience/introduction-to-spatial-data-analysis-in-r-using-rgeos-ea69059c3b90
-                #"rgeos",
-
-                # Point in polygon.
-                # https://www.rforge.net/doc/packages/SDMTools/pnt.in.poly.html
-                #"SDMTools",
-
-                # Take screenshot from website.
-                #"webshot",
-
-                # Scrape websites.
-                #"rvest",
-
-                # Reverse geocoding.
-                # https://rdrr.io/cran/tmaptools/man/tmaptools-package.html
-                # https://rdrr.io/cran/tmaptools/man/rev_geocode_OSM.html
-                "tmaptools", "tmap",
-
-                #' Function sline: A line in 2D space is defined by a start and an and point, each associated with 2D
-                #' coordinates. This function takes a /codedata.frame as input and assumes that each row
-                #' defines a line in space. In order to do so, the data frame must have at least four
-                #' columns and the start.cols and end.cols parameters must be used to point out the names
-                #' of the columns that define the start and end coordinates of the line. The data is then
-                #' converted to a SpatialLinesDataFrame DF.
-                #' https://rdrr.io/cran/inlabru/man/sline.html
-                #' Niet nodig omdat ik SP gebruik (SpatialLines en SpatialPolygons)
-                #"inlabru"
-
-                # Graphs
-                "igraph", "networkD3",
-                
                 # Edit RProfie of Snippets.
                 "usethis"
                 )
