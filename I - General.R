@@ -56,6 +56,9 @@
                 # tinytex:::install_prebuilt()
                 "tinytex",
                 
+                # E.g. combine PDFs.
+                "pdftools",
+                
                 # Plotting.
                 "grid", "gridExtra", "ggrepel", #"ggplot2",
                 "RColorBrewer", "scales", "plotly",

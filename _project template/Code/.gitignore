@@ -20,3 +20,5 @@ Archive/
 .Rhistory
 .RData
 .Ruserdata
+*.log
+*.bak
