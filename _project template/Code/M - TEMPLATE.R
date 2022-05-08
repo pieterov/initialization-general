@@ -8,13 +8,17 @@
 # INITIALIZE.
 ##############################################################################################
 
-        # Run Initialization.
+        # Run Xxxxx Initialization.
         f_source(
-                script.to.source = "I - XXXX",  
-                path             = paste0(path.initialization, "Initialization XXXX")
+                script.to.source = "I - XXXXX",  
+                path             = paste0(path.root.local, "Xxxxx/Projects/Initialization Xxxxx")
         )
-
-        # More initialization.
+        
+        # Project functions.
+        f_source(
+                script.to.source = "Project Functions",  
+                path             = path.code
+        )
 
 
 ##############################################################################################
