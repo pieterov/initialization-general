@@ -28,10 +28,11 @@
         # Read data
         df. <- f_read_data_from_file(
         
-                v.file.string       = "...",
-                c.file.type         = "xls",
-                c.path              = path.data,
-                c.sheet.name        = "..."
+                v.file.string = "...",
+                c.file.type   = "xls",
+                c.path        = path.data,
+                c.sheet.name  = "...",
+                l.col.type    = cols(.default = "c") # Reads all columns as character type.
         )
                 
                 
