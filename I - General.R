@@ -13,26 +13,45 @@
                 "data.table",
 
                 # Data wrangling. Note, plyr needs to be activated before dplyr!
+                # https://stackoverflow.com/questions/54749377/why-does-tidyverse-still-require-plyr-to-load
+                "plyr",
+                
+                # Tidyverse Packages:
+                # https://tidyverse.tidyverse.org/reference/tidyverse_packages.html
+                # https://cran.r-project.org/web/packages/broom/vignettes/broom.html
+                # https://googledrive.tidyverse.org
+                # https://googlesheets4.tidyverse.org/articles/articles/auth.html
+                #>  [1] "broom"         "cli"           "crayon"        "dbplyr"       
+                #>  [5] "dplyr"         "dtplyr"        "forcats"       "ggplot2"      
+                #>  [9] "googledrive"   "googlesheets4" "haven"         "hms"          
+                #> [13] "httr"          "jsonlite"      "lubridate"     "magrittr"     
+                #> [17] "modelr"        "pillar"        "purrr"         "readr"        
+                #> [21] "readxl"        "reprex"        "rlang"         "rstudioapi"   
+                #> [25] "rvest"         "stringr"       "tibble"        "tidyr"        
+                #> [29] "xml2"          "tidyverse"  
                 # Forecats is tidyverse library, especially made to handle factors in R. It provides a suite of
-                # useful tools that solve common problems with factors. 
-                "plyr", "dplyr", "magrittr", "tidyr", "forcats", "tibble",
-
+                # useful tools that solve common problems with factors.
+                "tidyverse",
+                
+                # Tidyverse package not loaded with 'tidyverse'
+                # https://www.tidyverse.org/packages/
+                # https://tidyverse.tidyverse.org
+                # tidyverse_update()
+                "broom", "dtplyr", "googledrive", "googlesheets4", "hms", "httr", "jsonlite", "lubridate",
+                "readxl", "glue", "jsonlite",
+                
+                # Read and write data (like 'csv', 'tsv' and 'fwf') quickly.
+                "vroom",
+                
                 # Fast write and read.
                 # https://github.com/fstpackage/fst/issues/71 - Cannot write list columns.
                 "fst",
-                
-                # Convert data to tidy data
-                # https://cran.r-project.org/web/packages/broom/vignettes/broom.html
-                "broom",
-
-                # Functional programming.
-                "purrr",
-
-                # Text manipulation, e.g., to manipulate characters, whitespaces and pattern matching.
-                "stringi", "stringr",
+               
+                # Very fast, portable, correct, consistent, and convenient string/text processing in any locale or character encoding.
+                "stringi",
 
                 # Files to open and save XLS and CSV (readr) files.
-                "openxlsx", "readxl", "readr",
+                "openxlsx", 
 
                 # Nice tables
                 "flextable",
@@ -60,14 +79,11 @@
                 "pdftools",
                 
                 # Plotting.
-                "grid", "gridExtra", "ggrepel", #"ggplot2",
+                "grid", "gridExtra", "ggrepel",
                 "RColorBrewer", "scales", "plotly",
 
-                # Date functions.
-                "lubridate",
-
                 # Build dashboards.
-                "shiny", "miniUI", "shinyFiles",
+                "shiny", "miniUI", "shinyFiles",  "shinyWidgets",
 
                 # Clock speed of code.
                 "tictoc",
@@ -92,6 +108,7 @@
                 "usethis"
                 )
         )
+
 
         # Platform specific packages.
         if(c.computer == "mac") {
@@ -160,12 +177,13 @@
         font.color <- "grey30"
         line.color <- "grey70"
         
+        
         # Set system locale.
         # https://stackoverflow.com/questions/41743949/utf-8-encoding-not-used-although-it-is-set-in-source/41747709#41747709
         # Sys.setlocale("LC_ALL") #,"English"
         
         
-        # Style title, requires library(shiny), activated here in 'I - Overall'.
+        # Style title, requires library(shiny), activated here in 'I - General'.
         tag.map.title <- tags$style(HTML(
                 
                 ".leaflet-control.map-title {
