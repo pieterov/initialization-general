@@ -33,7 +33,7 @@
                 # useful tools that solve common problems with factors.
                 "tidyverse",
                 
-                # Tidyverse package not loaded with 'tidyverse'
+                # Tidyverse packages not loaded with 'tidyverse'
                 # https://www.tidyverse.org/packages/
                 # https://tidyverse.tidyverse.org
                 # tidyverse_update()
@@ -61,6 +61,9 @@
                 
                 # Create shiny dashboard in three parts.
                 "shinydashboard",
+                
+                # Quarto
+                "quarto",
 
                 # Knit PDF with Notebook.
                 # And on new machines run, tinytex::install_tinytex(), see also:
