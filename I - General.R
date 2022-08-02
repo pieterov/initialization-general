@@ -37,8 +37,8 @@
                 # https://www.tidyverse.org/packages/
                 # https://tidyverse.tidyverse.org
                 # tidyverse_update()
-                "broom", "dtplyr", "googledrive", "googlesheets4", "hms", "httr", "jsonlite", "lubridate",
-                "readxl", "glue", "jsonlite",
+                "broom", "googledrive", "googlesheets4", "hms", "httr", "jsonlite", "lubridate",
+                "readxl", "glue", "jsonlite", #"dtplyr",
                 
                 # Read and write data (like 'csv', 'tsv' and 'fwf') quickly.
                 "vroom",
