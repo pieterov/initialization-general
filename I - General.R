@@ -7,7 +7,9 @@
 # LOAD LIBRARIES.
 ######################################################################################
 
-        f_install_package_from_cran(v.package = c(
+        f_install_package_from_cran(
+                
+                v.package = c(
 
                 # Bijv. rbindlist (to rbind a list of data frames).
                 "data.table",
@@ -106,11 +108,16 @@
 
                 # Create beautiful tables in RMarkdown.
                 "knitr", "kableExtra",
+                
+                # Dynamic tables
+                "reactable",
 
                 # Edit RProfie of Snippets.
-                "usethis"
-                )
-        )
+                "usethis",
+                
+                # Microbenchmark
+                "microbenchmark"
+        ))
 
 
         # Platform specific packages.
