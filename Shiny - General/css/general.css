@@ -1,0 +1,43 @@
+h1 {
+        text-align:     center;
+        font-size:      18px;
+        font-weight:    bold;
+}
+
+p {
+        text-align:     justify;
+        font-size:      16px;
+        margin-left:    25px;
+        margin-right:   25px;
+        /*font-family:    "Verdana";*/
+}
+
+li {
+        text-align:     justify;
+        font-size:      16px;
+        margin-right:   25px;
+        margin-bottom: .5rem;
+}
+
+
+a:link {
+        text-decoration: bold;
+}
+
+
+/*Remove ticks and labels from sliders.*/
+.irs-grid-text {display: none;}
+.irs-grid-pol  {display: none;}
+
+
+/*
+https://stackoverflow.com/questions/62964056/r-shiny-scrolling-sidebar-overflow
+https://stackoverflow.com/questions/62303331/how-to-make-sidebar-scroll-bootstrap-4
+*/
+#sidebarItemExpanded {
+        
+        overflow: auto;
+        max-height: 100vh;
+}
+
+
