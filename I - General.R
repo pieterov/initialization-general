@@ -45,6 +45,9 @@
                 # Read and write data (like 'csv', 'tsv' and 'fwf') quickly.
                 "vroom",
                 
+                # Dynamic Charting
+                "echarts4r",
+                
                 # Fast write and read.
                 # https://github.com/fstpackage/fst/issues/71 - Cannot write list columns.
                 "fst",
@@ -102,6 +105,18 @@
                 # Forward fill of NA.
                 # https://stackoverflow.com/questions/7735647/replacing-nas-with-latest-non-na-value
                 "zoo",
+                
+                # Read and write PNG and JPEG files.
+                "jpeg", "png",
+                
+                # Manipulate JPEGs.
+                # https://cran.r-project.org/web/packages/magick/vignettes/intro.html
+                "magick",
+                
+                # Working with images
+                # https://cran.r-project.org/web/packages/imager/vignettes/gettingstarted.html
+                # For installing imager on Mac OSX, you need to install Quartz, https://www.xquartz.org
+                "imager",
 
                 # Create R Markdown documents (dynamic documents for R).
                 "rmarkdown",
@@ -114,6 +129,9 @@
 
                 # Edit RProfie of Snippets.
                 "usethis",
+                
+                # Utility package, o.a. copy and removal of directories.
+                "R.utils",
                 
                 # Microbenchmark
                 "microbenchmark"

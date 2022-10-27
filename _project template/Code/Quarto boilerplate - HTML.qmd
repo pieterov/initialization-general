@@ -1,0 +1,72 @@
+---
+title: "..."
+
+format:
+        html:
+                theme: cosmo
+                page-layout: article
+                number-sections: false
+                self-contained: true
+execute:
+        echo: false
+---
+
+```{r init}
+#| include: false
+
+# toc: true
+# toc-title: Inhoudsopgave
+# execute: echo: false prevents code from appearing in the report.
+# #| column: screen-inset-right -->
+# #| column: screen-inset -->
+
+        # Definieer path.project (xxxx = partner, yyyy = project).
+        path.project <- paste0(path.root.local, "xxxx/Projects/yyyy/")
+        
+
+        # Run initialization.
+        f_source(
+                script.to.source = "I - xxxx",  
+                path             = paste0(path.root.local, "xxxx/Projects/Initialization xxxx/")
+        )
+        
+        
+        # Run Project Functions.
+        f_source(
+                script.to.source = "M - Project Functions",  
+                path             = path.code
+        )
+
+        
+        # Table and figure counter
+        table.i  <- 1
+        figure.i <- 1
+        
+        # Load variables, since this report runs like a function. It cannot access objects from the global environment.
+        load("variables.RData")
+        
+```
+
+
+
+```{r}
+
+```
+
+<br>
+
+
+
+```{r}
+
+```
+
+<br>
+
+
+```{r}
+
+```
+
+
+

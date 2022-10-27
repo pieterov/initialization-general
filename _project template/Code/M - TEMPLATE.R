@@ -32,7 +32,7 @@
                 c.file.type   = "xls",
                 c.path        = path.data,
                 c.sheet.name  = "...",
-                l.col.type    = cols(.default = "c") # Reads all columns as character type.
+                l.col.type    = "text" # Reads all columns as character type.
         )
                 
                 

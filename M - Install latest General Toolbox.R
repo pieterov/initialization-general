@@ -15,5 +15,8 @@
                 INSTALL_opts = c("--no-multiarch")
         )
         
+        # Show version number
+        packageVersion("generaltoolbox")
+        
         # Attach the (updated) package again to memory.
         library(generaltoolbox)

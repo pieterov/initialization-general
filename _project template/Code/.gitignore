@@ -7,7 +7,7 @@
 
 
 ###############
-# Folders
+# Folders R
 ###############
 Archive/
 _Archive/
@@ -15,7 +15,14 @@ rsconnect/
 
 
 ###############
-# RStudio
+# Folders Python
+###############
+__pycache__/
+.ipynb_checkpoints/
+
+
+###############
+# Files R
 ###############
 *.Rproj
 *.Rproj.user
@@ -27,3 +34,7 @@ rsconnect/
 *.fst
 *.rds
 *.csv
+
+###############
+# Files Python
+###############
