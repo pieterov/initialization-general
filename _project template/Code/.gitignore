@@ -33,7 +33,6 @@ __pycache__/
 *.bak
 *.fst
 *.rds
-*.csv
 
 ###############
 # Files Python
@@ -43,3 +42,5 @@ __pycache__/
 # Files Other
 ###############
 *.pdf
+*.html
+*.csv
