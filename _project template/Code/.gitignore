@@ -34,9 +34,14 @@ __pycache__/
 *.fst
 *.rds
 
+
 ###############
 # Files Python
 ###############
+
+# VS Code workspace
+*.code-workspace
+
 
 ###############
 # Files Other
