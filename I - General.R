@@ -42,6 +42,9 @@
                 "broom", "googledrive", "googlesheets4", "hms", "httr", "jsonlite", "lubridate",
                 "readxl", "glue", "jsonlite", #"dtplyr",
                 
+                # Text manipulation.
+                "tidytext",
+                
                 # Read and write data (like 'csv', 'tsv' and 'fwf') quickly.
                 "vroom",
                 
@@ -51,6 +54,12 @@
                 # Fast write and read.
                 # https://github.com/fstpackage/fst/issues/71 - Cannot write list columns.
                 "fst",
+                
+                # Read sqlite files
+                "RSQLite",
+                
+                # Write en read parquet files.
+                "arrow",
                
                 # Very fast, portable, correct, consistent, and convenient string/text processing in any locale or character encoding.
                 "stringi",
@@ -83,7 +92,7 @@
                 # tinytex:::install_prebuilt()
                 "tinytex",
                 
-                # E.g. combine PDFs.
+                # Read and combine PDFs.
                 "pdftools",
                 
                 # Plotting.
