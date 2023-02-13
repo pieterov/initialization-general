@@ -58,6 +58,9 @@
                 # Read sqlite files
                 "RSQLite",
                 
+                # Access MySQL
+                "RMySQL",
+                
                 # Write en read parquet files.
                 "arrow",
                
