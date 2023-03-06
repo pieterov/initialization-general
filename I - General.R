@@ -139,14 +139,20 @@
                 # Dynamic tables
                 "reactable",
 
-                # Edit RProfie of Snippets.
+                # Edit RProfile of Snippets.
                 "usethis",
                 
                 # Utility package, o.a. copy and removal of directories.
                 "R.utils",
                 
                 # Microbenchmark
-                "microbenchmark"
+                "microbenchmark",
+                
+                # Run parallel processing
+                "parallel",
+                
+                # Working with graph data
+                "igraph"
         ))
 
 
@@ -253,9 +259,9 @@
 
                 plot.margin      = unit(c(1, 1, 1, 1), "cm"),
 
-                axis.line        = element_line(color = line.color, size = 0.5),
+                axis.line        = element_line(color = line.color, linewidth = 0.5),
 
-                axis.ticks       = element_line(color = line.color, size = 1),
+                axis.ticks       = element_line(color = line.color, linewidth = 1),
 
                 axis.text.x      = element_text(color = font.color,
                                                 size  = font.axis.text.size,
