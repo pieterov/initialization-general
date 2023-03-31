@@ -76,8 +76,8 @@
                 # Flex dashboards
                 "flexdashboard",
                 
-                # Create shiny dashboard in three parts.
-                "shinydashboard",
+                # Create shiny dashboards.
+                "shinydashboard", "shinyFeedback", "fresh",
                 
                 # Quarto
                 "quarto",
@@ -152,7 +152,10 @@
                 "parallel",
                 
                 # Working with graph data
-                "igraph"
+                "igraph",
+                
+                # Model evaluation metrics.
+                "Metrics"
         ))
 
 
