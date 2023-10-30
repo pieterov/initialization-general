@@ -73,14 +73,14 @@
                 
                 axis.line = element_line(
                         
-                        color = line.color,
-                        size  = 0.5
+                        color     = line.color,
+                        linewidth = 0.5
                 ),
                 
                 axis.ticks = element_line(
                         
-                        color = line.color,
-                        size  = 1
+                        color     = line.color,
+                        linewidth = 1
                 ),
                 
                 axis.text.x = element_text(

@@ -51,9 +51,6 @@ __pycache__/
 *.csv
 
 
-
-
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -188,12 +185,6 @@ dmypy.json
 _quarto.yml
 /_site/
 
-# OSX
-.DS_Store
-.Rproj.user
-
-# RStudio
-*.Rproj
 
 # VS Code workspace
 *.code-workspace
