@@ -95,8 +95,11 @@
                 # tinytex:::install_prebuilt()
                 "tinytex",
                 
-                # Read and combine PDFs.
+                # Text extraction, rendering, and converting of PDFs.
                 "pdftools",
+                
+                # Split, combine, and compress PDF files
+                "qpdf",
                 
                 # Plotting.
                 "grid", "gridExtra", "ggrepel",
@@ -138,6 +141,24 @@
                 
                 # Dynamic tables
                 "reactable",
+                
+                # Open-source JavaScript library for mobile-friendly interactive maps.
+                # https://rstudio.github.io/leaflet/
+                # https://stackoverflow.com/questions/30110377/saving-leaflet-output-as-html/44086571
+                "leaflet", "htmlwidgets",
+                
+                # Toon muiscoordinaten in Leaflet.
+                # https://community.rstudio.com/t/problem-with-data-projection-on-leaflet/8801
+                # https://cran.r-project.org/web/packages/leafem/leafem.pdf
+                "leafem",
+                
+                # Take mapshot of leaflet and store as pdf. Before using 'mapshot()', you may have to 
+                # run 'webshot::install_phantomjs()'. ALTERNATIVE TO 'webshot', not needed for now.
+                #"mapview",
+                
+                # Take webshot. Before using 'mapshot()', you may have to 
+                # run 'webshot::install_phantomjs()'.
+                "webshot",
 
                 # Edit RProfile of Snippets.
                 "usethis",
@@ -194,7 +215,7 @@
         path.data         <- paste0(path.project, "Data/")
         path.documents    <- paste0(path.project, "Documents/")
         path.deliverables <- paste0(path.project, "Deliverables/")
-        path.leafets      <- paste0(path.project, "Leaflets/")
+        path.leaflets     <- paste0(path.project, "Leaflets/")
         path.shiny        <- paste0(path.project, "Shiny/")
         path.images       <- paste0(path.project, "Images/")
         
@@ -240,7 +261,7 @@
                                 width: 750px;
                                 position: fixed !important;
                                 left: 50%;
-                                text-align: center;
+                                text-align: left;
                                 padding-left: 10px;
                                 padding-right: 10px;
                                 background: rgba(255,255,255,0.5);
