@@ -210,7 +210,12 @@
 ######################################################################################
 
         # Default paths.
-        path.project      <- if(!exists("path.project")) {paste0(getwd(), "/")} else{path.project}
+        if(!exists("path.project")) {
+                path.project = paste0(
+                        gsub("/Code", "", getwd()),
+                "/")
+        }
+        
         path.code         <- paste0(path.project, "Code/")
         path.data         <- paste0(path.project, "Data/")
         path.documents    <- paste0(path.project, "Documents/")
@@ -251,7 +256,7 @@
         # Set system locale.
         # https://stackoverflow.com/questions/41743949/utf-8-encoding-not-used-although-it-is-set-in-source/41747709#41747709
         # Sys.setlocale("LC_ALL") #,"English"
-        
+        # Sys.setlocale(category = "LC_ALL", locale = "nl_NL.UTF-8")
         
         # Style title, requires library(shiny), activated here in 'I - General'.
         tag.map.title <- tags$style(HTML(
