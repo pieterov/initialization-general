@@ -231,6 +231,10 @@ options(stringsAsFactors = FALSE)
 # Turn off scientific numbers.
 options(scipen = 999)
 
+# Increase memory threshold for passing df.to.process to background workers (default is 
+# 500 MB): 2 * 1024^3 sets it to 2 GB. Adjust to 4 or 8 if you still get a size error.
+options(future.globals.maxSize = 8 * 1024^3)
+
 # Set seed.
 set.seed(12345)
 
@@ -252,7 +256,6 @@ if (!exists("font.label.text.size")) {font.label.text.size <- 3}  # Size of text
 # Define font and line color.
 font.color <- "grey30"
 line.color <- "grey70"
-
 
 # Set system locale.
 # https://stackoverflow.com/questions/41743949/utf-8-encoding-not-used-although-it-is-set-in-source/41747709#41747709
