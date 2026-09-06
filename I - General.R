@@ -233,7 +233,7 @@ options(scipen = 999)
 
 # Increase memory threshold for passing df.to.process to background workers (default is 
 # 500 MB): 2 * 1024^3 sets it to 2 GB. Adjust to 4 or 8 if you still get a size error.
-options(future.globals.maxSize = 8 * 1024^3)
+options(future.globals.maxSize = 4 * 1024^3)
 
 # Set seed.
 set.seed(12345)
